@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    font-family: 'Inter', sans-serif;
+    --page-background: #222;
+    --flag-width: 300px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: var(--page-background);
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.flag {
+    width: var(--flag-width);
+    aspect-ratio: 4/3;
+    background: gainsboro;
+    position: relative;
+
+}
+
+.flag::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgba(240, 240, 240, 0.271), rgba(92, 13, 13, 0.162));
+    z-index: 4;
+}
+
+.flag_title {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Italy */
+
+.flag--italy {
+
+display: flex;
+
+}
+
+.it--green{
+    
+    background: green;
+    width: 33.33%;
+    height: inherit;
+
+}
+
+.it--white{
+    
+    background: rgb(255, 255, 255);
+    width: calc(100% / 3);
+    height: inherit;
+
+}
+
+.it--red{
+    
+    background: rgb(230, 28, 28);
+    width: 33.33%;
+    height: inherit;
+
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* Ukraine */
+
+.flag--ukraine {
+
+display: flex;
+flex-direction: column;
+
+}
+
+.uk--yellow {
+
+background-color: yellow;
+height: calc(100% /2);
+
+
+}
+
+.uk--blue {
+
+    background-color: blue;
+    height: calc(100% /2);
+    
+    
+    }
+
+
+/* ---------------------------------------------------------------------- */
+/* Kuwait */
+/* ---------------------------------------------------------------------- */
+
+.flag--kuwait {
+
+    display: flex;
+    flex-direction:column;
+    align-content: space-between;
+
+
+}
+
+.kt--green {
+
+   
+    width: 100%;
+    height: calc(100% /3);
+    background: green;
+
+}
+
+
+.kt--white {
+
+    
+    width: 100%;
+    height: calc(100% /3);
+    background: white;
+
+}
+
+.kt--red {
+
+    
+    width: 100%;
+    height: calc(100% /3);
+    background: red;
+
+}
+
+
+.kt--black {
+
+position: absolute;
+background: black;
+width: 100%;
+height: 100%;
+clip-path: polygon(0 0, 35% 33.333%, 35% 67%, 0 100%);
+transform: translateX(-0.2px);
+
+}
+
+/* ---------------------------------------------------------------------- */
+/* Banglasdesh */
+
+.flag--bangladesh {
+
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.bng--green {
+
+background: green;
+height: 100%;
+aspect-ratio: inherit;
+
+
+}
+
+.bng--red {
+
+    background: red;
+    width: calc(100% /3);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    
+    
+    
+    }
+
+
+
+
+/* ---------------------------------------------------------------------- */
+/* Japan */
+
+
+.flag--japan  {
+
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+       
+}
+
+
+.jpn--white {
+
+    background: rgb(255, 255, 255);
+    height: 100%;
+    aspect-ratio: inherit;
+    
+    
+    }
+    
+    .jpn--red {
+    
+        background: red;
+        width: calc(100% /3);
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: absolute;
+        
+        
+        
+        }
+    
+
+
+/* ---------------------------------------------------------------------- */
+/* Greece */
+
+.flag--greece {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.stripe {
+
+    width: 100%;
+    background-color: blue;
+    height:calc(100% / 9);
+
+}
+
+.gr--stripe--blue {
+
+    background-color: blue;
+    height:calc(100% / 9);
+
+}
+
+
+
+.gr--square--blue {
+
+   
+    position: absolute;
+    aspect-ratio: 1;
+    height: calc(100% / 9 * 5);
+    background: blue;
+    z-index: 2;
+}
+
+.vertical{
+
+
+    position: absolute;
+    background: rgb(220, 220, 220);
+    width: calc(100% / 5);
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+
+  .horizontal{
+    position: absolute;
+    background: rgb(220, 220, 220);
+    width: calc(100% / 5);
+    height: 100%;
+    transform: rotate(90deg);
+    left: 40%;
+
+
+
+  }
+
+/* ---------------------------------------------------------------------- */
+/* Portugal */
+
+.flag--portugal {
+
+display: flex;
+position: relative;
+
+}
+
+.pt--green {
+
+background: green;
+width: calc(100% /1.7);
+height: 100%;
+z-index: 2;
+
+
+}
+
+.pt--red {
+
+background: red;
+width: 100%;
+height:100%;
+z-index: 1;
+
+}
+
+.pt--sphere {
+
+    position: absolute;
+    z-index: 3;
+    background: yellow;
+    width: calc(100% /3);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    transform: translateX(calc(100% /1.6));
+    align-self: center;
+
+}
