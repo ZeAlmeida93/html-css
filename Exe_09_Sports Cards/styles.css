@@ -1,12 +1,13 @@
 body {
   display: flex;
-  background: gainsboro;
+  background: linear-gradient(-53.05deg, #5e16bb, #9d1370), #fff;
   width: 100%;
   justify-content: center;
   align-items: center;
   height: 750px;
-  font-family: lato;
+  font-family: Libre Franklin;
   color: azure;
+  margin-bottom: 100px;
 }
 
 
@@ -20,6 +21,11 @@ h3 {
     color: rgb(203, 203, 203);
 }
 
+h2 {
+
+  font-weight: 500;
+ 
+}
 
 .card {
     
@@ -30,10 +36,11 @@ h3 {
   height: 620px;
   border-radius: 15px;
   overflow: hidden;
+
 }
 
 .upper--section {
-  background: red;
+  background: linear-gradient(202.43deg, #f1a616, #ff0d01);
   width: auto;
   border-radius: 0px;
 }
@@ -78,8 +85,26 @@ h3 {
 
 .btn--nike {
 
+   
+    border: 2px solid #0000ff;
+    color: #0000ff;
     border-radius: 25px;
     width: 100px;
     height:45px;
     align-self: center;
+    z-index: 2;
+    transition: ease-in-out 170ms;
+}
+
+.btn--nike:hover {
+background: #0000ff;
+color: #fff;
+
+
+}
+
+.icon--nike img {
+
+width:45px;
+
 }
