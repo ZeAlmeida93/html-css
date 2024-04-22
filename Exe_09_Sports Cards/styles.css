@@ -7,7 +7,8 @@ body {
   height: 750px;
   font-family: Libre Franklin;
   color: azure;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+
 }
 
 
@@ -27,6 +28,13 @@ h2 {
  
 }
 
+.card--animation {
+
+  transition: ease-in-out 2seg;
+  animation: swinging 6s ease-in-out infinite;
+
+}
+
 .card {
     
   display: flex;
@@ -35,14 +43,30 @@ h2 {
   width: 350px;
   height: 620px;
   border-radius: 15px;
-  overflow: hidden;
+  
+ 
+}
+
+
+@keyframes swinging {
+
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }s
+
 
 }
+
+
 
 .upper--section {
   background: linear-gradient(202.43deg, #f1a616, #ff0d01);
   width: auto;
-  border-radius: 0px;
+  border-radius: 15px;
+  
+  overflow: hidden;
+
 }
 
 .lower--section {
@@ -53,12 +77,14 @@ h2 {
   width: auto;
   height: 28%;
   border-radius: 0%;
+ 
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   margin: 15px;
+  
 }
 
 .card--body--text {
@@ -70,8 +96,9 @@ h2 {
   font-size: 260px;
   font-weight: 600;
   line-height: 230px;
-  transform: translateX(-30px);
+  transform: translateX(-45px);
   opacity: 20%;
+  
 }
 
 .nike img {
@@ -80,7 +107,8 @@ h2 {
     height: 380px;
     position: absolute;
     display: flex;
-    top:280px;
+    top:200px;
+  
 }
 
 .btn--nike {
