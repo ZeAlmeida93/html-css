@@ -1,0 +1,53 @@
+
+.label{
+
+    text-align: center;
+justify-content: center;
+font-family: Inter;
+font-size: 13px;
+font-weight: 400;
+line-height: 20px;
+
+}
+
+
+.btn--default{
+
+
+width:90px;
+height:32px;
+padding:1px 16px 1px 16px;
+gap: 10px;
+
+
+
+
+
+}
+
+
+.btn--blue{
+    background: #0070D2;
+
+
+}
+
+.btn--white{
+    background: #FFFFFF;
+
+
+}
+
+
+.btn--red{
+    background: #b83636;
+
+
+}
+
+.stroke--blue{
+
+border: 1px solid  #0070D2;
+
+}
+
