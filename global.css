@@ -1,0 +1,78 @@
+:root {
+
+--heading-font-size: 17px;
+--heading-line-height: 20px;
+
+
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #272727;
+  margin: 0px;
+  min-width: 480px;
+
+ 
+}
+
+h1,
+h2, h3 {
+  color: #faff00;
+ 
+}
+
+h4 {
+
+  color: #FFFFFF;
+  font-family: Inter;
+font-size: var(--heading-font-size);
+font-weight: 600;
+line-height: var(--heading-line-height);
+text-align: left;
+
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+}
+
+
+p {
+  color: #FFFFFF;
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+text-align: left;
+
+  }
+
+  span {
+  font-weight: 600;
+  color: #307BEC;
+
+  }
+
+
+  .collapsable {
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    overflow: hidden;
+
+  }
